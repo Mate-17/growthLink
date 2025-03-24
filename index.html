@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pooja Mate | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Add an id to the header -->
+    <header id="home">
+      <div class="hero">
+        <div class="photo">
+          <img src="Pooja Mate.png" alt="Photo">
+        </div>
+        <h1>Hello, I'm <span>Pooja Vitthal Mate</span></h1>
+        <p>Aspiring Software Engineer | Web Developer | Tech Enthusiast</p>
+        <a href="#about" class="btn">Learn More</a>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#Education">Educational Details</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is Pooja Vitthal Mate, and I am currently pursuing my Bachelor’s degree in Computer Engineering. My journey in the field of technology has been shaped by a strong academic background, diverse learning experiences, and a passion for solving real-world problems.I have Completed my schooling at Shining Star Academy English Medium School in 2019, achieving an academic score of 86.20%.I have completed  diploma from MET Bhujbal Knowledge City in 2022 with academic score of 85.7%.<br>Familiar with web development technologies and tools for creating dynamic websites.
+          I like Exploring new programming languages and frameworks.Even like Building small projects to enhance my understanding of software design principles.I am a passionate Computer Science student with a strong foundation in web development, programming, and database management, complemented by robust problem-solving capabilities, leadership skills, and a smart working approach.
+          With a keen interest in software development, web development, and data management, I am dedicated to leveraging technology to solve real-world problems and create impactful projects. My enthusiasm for innovation drives me to continuously learn and stay updated with emerging trends in technology, including artificial intelligence and data science.
+          Beyond academics, I actively engage in hobbies such as photography, playing chess, and volunteering at tech events. These experiences reflect my creative, analytical, and collaborative nature. I aim to contribute meaningfully to the tech industry by applying my skills and knowledge to develop practical, user-centric solutions.</p>
+      </section>
+      <section id="Education">
+        <h2>Educational Details</h2>
+        <div class="education-grid">
+          <div class="education-item">
+            <h3>Bachelor of Engineering in Computer Engineering</h3>
+            <p><strong>Institute:</strong> Sandip Institute of Technology and Research Centre</p>
+            <p><strong>Year:</strong> 2022 - 2025</p>
+            <p><strong>CGPA:</strong> Pursuing</p>
+          </div>
+          <div class="education-item">
+            <h3>Diploma in Computer Engineering</h3>
+            <p><strong>Institute:</strong> Met Bhujbal Knowledge City</p>
+            <p><strong>Year:</strong> 2019 - 2022</p>
+            <p><strong>Percentage:</strong> 85.77%</p>
+          </div>
+          <div class="education-item">
+            <h3>Secondary Education</h3>
+            <p><strong>Institute:</strong> Shining Star Academy English Medium School</p>
+            <p><strong>Year:</strong> 2018-2019</p>
+            <p><strong>Percentage:</strong> 86.20%</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-bar">
+          <p>HTML</p>
+          <div class="bar">
+            <div class="fill" style="width: 95%;">95%</div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <p>CSS</p>
+          <div class="bar">
+            <div class="fill" style="width: 90%;">90%</div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <p>JavaScript</p>
+          <div class="bar">
+            <div class="fill" style="width: 90%;">90%</div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <p>Java</p>
+          <div class="bar">
+            <div class="fill" style="width: 85%;">85%</div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <p>C++</p>
+          <div class="bar">
+            <div class="fill" style="width: 80%;">80%</div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <p>SQL</p>
+          <div class="bar">
+            <div class="fill" style="width: 88%;">88%</div>
+          </div>
+        </div>
+      </section>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const skillFills = document.querySelectorAll(".fill");
+      
+          skillFills.forEach((fill) => {
+            const width = fill.style.width;
+            fill.style.width = "0"; // Start at 0%
+            setTimeout(() => {
+              fill.style.width = width; // Animate to actual width
+            }, 100);
+          });
+        });
+      </script>
+            
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio showcasing my skills and projects.</p>
+          </div>
+          <div class="project-card">
+            <h3>Movie Recommendation System</h3>
+            <p>A webapp for movie enthusiasts to discover, search, and explore movies based on different criteria while also being a great project to practice web development and API integration.</p>
+          </div>
+          <div class="project-card">
+            <h3>E-agricultural Equipment Website</h3>
+            <p>E-agricultural equipment enhances farming efficiency and productivity by providing advanced tools like tractors, harvesters, and irrigation systems tailored for modern agricultural practices.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>"Thank you for visiting! Feel free to explore my Resume to learn more about my skills and projects.<br>I'm excited about the opportunity to contribute to your team—looking forward to being shortlisted for a role!"</p>
+        <a href="https://tinyurl.com/5bavwbw3" target="_blank" class="btn">View My Resume</a>
+        
+      </section>
+      <div class="wave-divider"></div>
+      <ul class="contact-animated-icons">
+        <li><a href="mailto:poojavmate17@gmail.com"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/pooja-mate-bb24612ab"></a>
+        <i class="fab fa-linkedin"></i></a></li>
+      </ul>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-front">
+            <h3>Email Me</h3>
+          </div>
+          <div class="card-back">
+            <a href="mailto:poojavmate17@gmail.com">poojavmate17@gmail.com</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-front">
+            <h3>LinkedIn</h3>
+          </div>
+          <div class="card-back">
+            <a href="https://www.linkedin.com/in/pooja-mate-bb24612ab">LinkedIn Profile</a>
+          </div>
+        </div>
+      </div>
+                      
+    </main>
+
+    <footer>
+      <p>&copy; Pooja Mate</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/pooja-mate-bb24612ab" target="_blank">
+          <img src="linkedin.png" alt="LinkedIn">
+        </a>
+        
+        <a href="https://www.instagram.com/pooja_mate17?igsh=a2Q2Y24zYmliZmhp" target="_blank">
+          <img src="insta.jpg" alt="Instagram">
+        </a>
+        <a href="tel:8308883762" target="_blank">
+     <img src="wp3.jpg" alt="WhatsApp">
+        </a>
+      </div>
+    </footer>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
